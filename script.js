@@ -51,6 +51,27 @@ document.addEventListener("DOMContentLoaded", () => {
     aboutBtn.classList.remove("active");
   });
 
+  // Функция предварительной загрузки GIF
+  const preloadGifs = (gifPaths) => {
+    gifPaths.forEach((path) => {
+      const img = new Image();
+      img.src = path;
+    });
+  };
+
+  // Список GIF для предварительной загрузки
+  const gifPaths = [
+    'assets/item_1.gif',
+    'assets/item_2.gif',
+    'assets/item_3.gif',
+    'assets/item_4.gif',
+    'assets/item_5.gif',
+    'assets/item_6.gif',
+  ];
+
+  // Предварительная загрузка GIF
+  preloadGifs(gifPaths);
+
   // Открытие GIF из инвентаря
   inventoryItems.forEach((item) => {
     item.addEventListener("click", () => {
@@ -65,4 +86,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
