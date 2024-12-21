@@ -11,62 +11,61 @@ body {
   color: white;
   font-family: 'CustomFont', Arial, sans-serif;
   overflow: hidden;
-}
-
-/* Интро */
-#intro-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
 }
 
-#intro-video {
+/* Основной контейнер */
+#menu-container {
+  width: 100%;
+  max-width: 1920px; /* Максимальная ширина для больших экранов */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Инвентарь */
+.inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 191px);
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.inventory-item {
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+}
+
+/* Превью предмета */
+#item-preview {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  max-width: 500px;
+  text-align: center;
+}
+
+#preview-image {
   width: 100%;
   height: auto;
 }
 
-/* Главное меню */
-#menu-container {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  display: none; /* По умолчанию скрыто */
-}
-
-#menu-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 /* Кнопки */
-#menu-buttons {
-  position: absolute;
-  top: 14px;
-  left: 74.4%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 14px;
-}
-
 .menu-btn {
   background: transparent;
   color: white;
   border: 4px solid red;
-  padding: 20px 80px;
-  font-size: 40px;
+  padding: 10px 40px;
+  font-size: 2vw;
   cursor: pointer;
   text-align: center;
   transition: all 0.3s ease;
@@ -85,113 +84,79 @@ body {
   box-shadow: 0 0 20px rgba(255, 0, 128, 0.8);
 }
 
-/* Подкнопки */
 .sub-buttons {
   display: flex;
   gap: 12px;
-  position: absolute;
-  top: 102px;
+  position: relative;
+  top: 10px;
 }
 
 .sub-btn {
   background: transparent;
   color: white;
   border: 4px solid blue;
-  padding: 21px 35px;
-  font-size: 25px;
+  padding: 15px 30px;
+  font-size: 1.5vw;
   cursor: pointer;
   text-align: center;
   transition: all 0.3s ease;
 }
 
-/* Инвентарь */
-#inventory {
+.sub-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Скрываем секции по умолчанию */
+#about-section,
+#contact-section {
   position: absolute;
-  top: 225px;
-  right: 305px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 5;
 }
 
-.inventory-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 191px);
-  row-gap: 20px;
-  justify-content: center;
-  align-content: center;
-}
-
-/* Превью предмета */
-#item-preview {
-  position: absolute;
-  bottom: 140px;
-  left: 29%;
-  transform: translateX(-50%);
-  width: 500px;
-  text-align: center;
-}
-
-#preview-image {
-  width: 450px;
+#about-section img,
+#contact-section img {
+  max-width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-/* Адаптивная версия для мобильных устройств */
+/* Адаптивные стили для мобильных устройств */
 @media (max-width: 768px) {
-  body {
-    overflow-y: auto; /* Добавляем вертикальную прокрутку, если нужно */
-  }
-
   #menu-container {
     width: 100%;
     height: auto;
     padding: 10px;
   }
 
-  #menu-buttons {
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+  .inventory-grid {
+    grid-template-columns: repeat(1, 1fr); /* Одна колонка для мобильных */
+    gap: 10px;
   }
 
   .menu-btn {
-    font-size: 20px;
-    padding: 10px 40px;
+    font-size: 4vw;
+    padding: 8px 20px;
   }
 
   .sub-buttons {
     flex-direction: column;
-    gap: 10px;
-    position: relative;
-    top: 20px;
+    gap: 8px;
   }
 
   .sub-btn {
-    font-size: 18px;
-    padding: 10px 20px;
-  }
-
-  #inventory {
-    position: relative;
-    top: auto;
-    right: auto;
-    margin: 0 auto;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .inventory-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
-    width: 100%;
+    font-size: 3vw;
+    padding: 8px 20px;
   }
 
   #item-preview {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    transform: none;
-    width: 90%;
-    margin: 20px auto;
+    width: 80%;
+    max-width: 300px;
+    bottom: 5%;
   }
 
   #preview-image {
