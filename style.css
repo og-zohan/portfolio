@@ -236,3 +236,68 @@ body {
   display: block;
   margin: 0 auto;
 }
+
+/* Адаптивная версия для мобильных устройств */
+@media (max-width: 768px) {
+  body {
+    overflow-y: auto; /* Добавляем вертикальную прокрутку, если нужно */
+  }
+
+  #menu-container {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  #menu-buttons {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .menu-btn {
+    font-size: 20px;
+    padding: 10px 40px;
+  }
+
+  .sub-buttons {
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    top: 20px;
+  }
+
+  .sub-btn {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  #inventory {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .inventory-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 100%;
+  }
+
+  #item-preview {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  #preview-image {
+    width: 100%;
+  }
+}
