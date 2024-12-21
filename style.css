@@ -49,7 +49,98 @@ body {
   object-fit: cover;
 }
 
-/* Кнопки */
+/* Шапка с именем и статусом */
+#header {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  display: flex;
+  font-size: 22px;
+}
+
+#condition {
+  margin-left: 50px;
+  font-size: 20px;
+  color: #00FF00;
+}
+
+/* Область health.gif */
+#health {
+  position: absolute;
+  top: 95px;
+  right: 1186.5px;
+  width: 170.99px;
+  height: 170.99px;
+}
+
+/* Область EQUIP */
+#equip {
+  position: absolute;
+  top: 65px;
+  right: 738.5px;
+  width: 170px;
+  height: 170px;
+}
+
+#equip img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Инвентарь */
+#inventory {
+  position: absolute;
+  top: 225px;
+  right: 305px;
+}
+
+.inventory-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 191px);
+    row-gap: 20px;
+    align-content: stretch;
+    justify-content: space-between;
+    justify-items: center;
+    
+}
+
+.inventory-item {
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+}
+
+.inventory-item.selected {
+  border: 2px solid red;
+}
+
+/* Превью предмета */
+#item-preview {
+  position: absolute;
+  bottom: 140px; /* Фиксированное положение относительно нижнего края */
+  left: 29%; /* Центрирование по горизонтали */
+  transform: translateX(-50%); /* Смещение на половину ширины для точного центрирования */
+  width: 500px; /* Ширина контейнера */
+  text-align: center; /* Центровка содержимого по горизонтали */
+}
+
+/* Изображение превью */
+#preview-image {
+  position: relative;
+  display: block;
+  right: -205px;
+  width: 450px; /* Фиксированная ширина для всех GIF */
+}
+
+/* Описание превью */
+#preview-description {
+  font-size: 30px;
+  height: 40px;
+  color: #fff; /* Цвет текста */
+  text-align: left;
+}
+
+/* Основной контейнер кнопок */
 #menu-buttons {
   position: absolute;
   top: 14px;
@@ -61,6 +152,7 @@ body {
   gap: 14px;
 }
 
+/* Главная кнопка "Портфолио" */
 .menu-btn {
   background: transparent;
   color: white;
@@ -69,6 +161,7 @@ body {
   font-size: 40px;
   cursor: pointer;
   text-align: center;
+  position: relative;
   transition: all 0.3s ease;
 }
 
@@ -89,6 +182,7 @@ body {
 .sub-buttons {
   display: flex;
   gap: 12px;
+  left: -1px;
   position: absolute;
   top: 102px;
 }
@@ -102,99 +196,43 @@ body {
   cursor: pointer;
   text-align: center;
   transition: all 0.3s ease;
+  position: relative;
+  left: 3px;
 }
 
-/* Инвентарь */
-#inventory {
+.sub-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sub-btn.active::after {
+  content: '';
   position: absolute;
-  top: 225px;
-  right: 305px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(255, 0, 128, 0.6), transparent);
+  z-index: -1;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.8);
 }
 
-.inventory-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 191px);
-  row-gap: 20px;
-  justify-content: center;
-  align-content: center;
-}
 
-/* Превью предмета */
-#item-preview {
+/* Скрываем секции по умолчанию */
+#about-section,
+#contact-section {
   position: absolute;
-  bottom: 140px;
-  left: 29%;
-  transform: translateX(-50%);
-  width: 500px;
-  text-align: center;
+  top: 282px;
+  left: 24%;
+  transform: translateX(-31%);
+  display: none; /* Скрыто по умолчанию */
+  z-index: 5; /* Убедимся, что PNG выше других элементов */
 }
 
-#preview-image {
-  width: 450px;
+#about-section img,
+#contact-section img {
+  max-width: 82.5%;
   height: auto;
-}
-
-/* Адаптивная версия для мобильных устройств */
-@media (max-width: 768px) {
-  body {
-    overflow-y: auto; /* Добавляем вертикальную прокрутку, если нужно */
-  }
-
-  #menu-container {
-    width: 100%;
-    height: auto;
-    padding: 10px;
-  }
-
-  #menu-buttons {
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .menu-btn {
-    font-size: 20px;
-    padding: 10px 40px;
-  }
-
-  .sub-buttons {
-    flex-direction: column;
-    gap: 10px;
-    position: relative;
-    top: 20px;
-  }
-
-  .sub-btn {
-    font-size: 18px;
-    padding: 10px 20px;
-  }
-
-  #inventory {
-    position: relative;
-    top: auto;
-    right: auto;
-    margin: 0 auto;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .inventory-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
-    width: 100%;
-  }
-
-  #item-preview {
-    position: relative;
-    bottom: auto;
-    left: auto;
-    transform: none;
-    width: 90%;
-    margin: 20px auto;
-  }
-
-  #preview-image {
-    width: 100%;
-  }
+  display: block;
+  margin: 0 auto;
 }
