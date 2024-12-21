@@ -85,4 +85,20 @@ document.addEventListener("DOMContentLoaded", () => {
       previewDescription.textContent = description; // Устанавливаем описание
     });
   });
+document.addEventListener("DOMContentLoaded", () => {
+  const rotateNotice = document.getElementById("rotate-notice");
+
+  const checkOrientation = () => {
+    // Если экран в портретной ориентации
+    if (window.innerHeight > window.innerWidth) {
+      rotateNotice.classList.remove("hidden"); // Показываем предупреждение
+    } else {
+      rotateNotice.classList.add("hidden"); // Скрываем предупреждение
+    }
+  };
+
+  // Проверяем ориентацию экрана при загрузке и изменении размера
+  window.addEventListener("resize", checkOrientation);
+  checkOrientation(); // Проверяем ориентацию при загрузке
+});
 });
