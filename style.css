@@ -236,3 +236,13 @@ body {
   display: block;
   margin: 0 auto;
 }
+
+/* Адаптивная версия для мобильных устройств */
+@media (max-width: 768px) {
+  /* Уменьшение масштаба для мобильных устройств */
+  body {
+    transform: scale(0.8); /* Уменьшаем весь сайт */
+    transform-origin: top left;
+    overflow-x: hidden; /* Убираем горизонтальную прокрутку */
+  }
+}
