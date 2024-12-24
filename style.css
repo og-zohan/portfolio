@@ -243,6 +243,16 @@ body {
 /* Адаптивная версия для мобильных устройств */
 @media (max-width: 767px) {
 
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: black;
+    font-family: 'CustomFont', Arial, sans-serif;
+    overflow: hidden;
+  }
+
   /* Интро */
 #intro-container {
   position: fixed;
