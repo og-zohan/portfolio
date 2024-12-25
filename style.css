@@ -275,17 +275,15 @@ body {
 /* Главное меню */
 #menu-container {
   position: relative;
-  width: 100vw;
-  height: 100vh;
-  display: none; /* По умолчанию скрыто */
+  width: 143%;
+  height: auto;
 }
 
 #menu-bg {
-  position: absolute;
+  position: relative;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 44%;
+  left: -92px;
+  width: 122%;
   object-fit: cover;
 }
 
@@ -307,53 +305,55 @@ body {
 /* Область health.gif */
 #health {
   position: absolute;
-  top: 95px;
-  right: 1186.5px;
-  width: 170.99px;
-  height: 170.99px;
+  top: 54px;
+  right: 232px;
+  width: 205.99px;
 }
+
 #health img {
-  width: 150px; /* Установите желаемую ширину */
-  height: 150px; /* Установите желаемую высоту */
+  width: 59%; /* Установите желаемую ширину */
+  height: auto; /* Установите желаемую высоту */
   object-fit: cover; /* Это свойство поможет при масштабировании */
 }
 
 
 /* Область EQUIP */
 #equip {
-  position: absolute;
-  top: 65px;
-  right: 738.5px;
-  width: 170px;
+  position: relative;
+  top: -332px;
+  right: -245.5px;
+  width: 113px;
   height: 170px;
 }
 
 #equip img {
-  width: 100%;
-  height: 100%;
+  width: 64%;
+  height: auto;
+  display: flex;
 }
 
 /* Инвентарь */
 #inventory {
   position: absolute;
-  top: 225px;
-  right: 305px;
+  top: 97px;
+  right: -100px;
+  width: 90%;
 }
 
 .inventory-grid {
     display: grid;
-    grid-template-columns: repeat(2, 191px);
-    row-gap: 20px;
+    row-gap: 11px;
     align-content: stretch;
     justify-content: space-between;
     justify-items: center;
-    
+    grid-template-columns: 64px 64px;
 }
 
 .inventory-item {
-  width: 120px;
-  height: 120px;
+  width: 58%;
+  height: auto;
   cursor: pointer;
+  align-self: center;
 }
 
 .inventory-item.selected {
@@ -363,48 +363,50 @@ body {
 /* Превью предмета */
 #item-preview {
   position: absolute;
-  bottom: 140px; /* Фиксированное положение относительно нижнего края */
-  left: 29%; /* Центрирование по горизонтали */
+  bottom: 260px; /* Фиксированное положение относительно нижнего края */
+  left: 49%; /* Центрирование по горизонтали */
   transform: translateX(-50%); /* Смещение на половину ширины для точного центрирования */
-  width: 500px; /* Ширина контейнера */
+  width: 502px; /* Ширина контейнера */
   text-align: center; /* Центровка содержимого по горизонтали */
+  display: flex;
 }
 
 /* Изображение превью */
 #preview-image {
   position: relative;
-  display: block;
-  right: -205px;
-  width: 450px; /* Фиксированная ширина для всех GIF */
+  display: flex;
+  right: -63px;
+  width: 35%; /* Фиксированная ширина для всех GIF */
 }
 
 /* Описание превью */
 #preview-description {
-  font-size: 30px;
-  height: 40px;
+  position: absolute;
+  font-size: 11px;
+  height: 26px;
   color: #fff; /* Цвет текста */
   text-align: left;
+  top: 91%;
 }
 
 /* Основной контейнер кнопок */
 #menu-buttons {
   position: absolute;
-  top: 14px;
-  left: 74.4%;
+  top: 25px;
+  left: 73.5%;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
 }
 
 /* Главная кнопка "Портфолио" */
 .menu-btn {
   background: transparent;
   color: white;
-  border: 4px solid blue;
-  padding: 20px 80px;
-  font-size: 40px;
+  border: 2.5px solid blue;
+  padding: 7px 29.5px;
+  font-size: 12px;
   cursor: pointer;
   text-align: center;
   position: relative;
@@ -427,23 +429,24 @@ body {
 /* Подкнопки */
 .sub-buttons {
   display: flex;
-  gap: 12px;
-  left: -1px;
+  gap: 3px;
+  left: 1px;
   position: absolute;
-  top: 102px;
+  top: 36px;
 }
 
 .sub-btn {
   background: transparent;
   color: white;
-  border: 4px solid blue;
-  padding: 21px 35px;
-  font-size: 25px;
+  border: 3px solid blue;
+  padding: 5px 7.4px;
+  font-size: 10px;
   cursor: pointer;
   text-align: center;
   transition: all 0.3s ease;
   position: relative;
-  left: 3px;
+  left: -1px;
+  white-space: nowrap;
 }
 
 .sub-btn:hover {
@@ -468,8 +471,8 @@ body {
 #about-section,
 #contact-section {
   position: absolute;
-  top: 282px;
-  left: 24%;
+  top: 119px;
+  left: 41%;
   transform: translateX(-31%);
   display: none; /* Скрыто по умолчанию */
   z-index: 5; /* Убедимся, что PNG выше других элементов */
@@ -477,10 +480,12 @@ body {
 
 #about-section img,
 #contact-section img {
-  max-width: 82.5%;
+  position: relative;
+  max-width: 130.5%;
   height: auto;
   display: block;
-  margin: 0 auto;
+  margin: auto;
+  left: -167px;
 }
 }
 
