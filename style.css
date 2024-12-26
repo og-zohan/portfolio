@@ -474,13 +474,14 @@ body {
   top: 98px;
   left: 53%;
   transform: translateX(-31%);
+  display: none; /* Скрыто по умолчанию */
   z-index: 5; /* Убедимся, что PNG выше других элементов */
 }
 
 #about-section img,
 #contact-section img {
   position: relative;
-  max-width: 131%;
+  max-width: 130.5%;
   height: auto;
   display: block;
   margin: auto;
