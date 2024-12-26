@@ -241,18 +241,18 @@ body {
 }
 
 /* Адаптивная версия для мобильных устройств */
-.mobile-container {
-  position: relative;
-  /* "Эталонный" размер, под который ты сверстал всё в px */
-  width: 414px;   
-  height: 896px;  /* к примеру, высота iPhone 11 (портрет) */
-  transform-origin: top left; /* чтобы масштаб шёл из левого верхнего угла */
-  margin: 0 auto;  /* если хочешь по центру на более широком экране */
-  background: black; /* можешь убрать/поменять на нужный фон */
-}
-
-/* Адаптивная версия для мобильных устройств */
 @media (max-width: 767px) {
+
+  .mobile-container {
+    position: relative;
+    /* "Эталонный" размер, под который ты сверстал всё в px */
+    width: 414px;   
+    height: 896px;  /* к примеру, высота iPhone 11 (портрет) */
+    transform-origin: top left; /* чтобы масштаб шёл из левого верхнего угла */
+    margin: 0 auto;  /* если хочешь по центру на более широком экране */
+    background: black; /* можешь убрать/поменять на нужный фон */
+  }
+  
   .mobile-container {
     transform: scale(calc(100vw / 414));
   }
