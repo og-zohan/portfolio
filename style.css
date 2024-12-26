@@ -6,7 +6,7 @@
 
 @media (min-width: 1025px) {
 
-  
+
 body {
   margin: 0;
   padding: 0;
@@ -257,7 +257,7 @@ body {
   .mobile-container {
     transform: scale(calc(100vw / 414));
   }
-}
+
 
   body {
     margin: 0;
@@ -502,7 +502,7 @@ body {
   margin: auto;
   left: -263px;
 }
-
+}
 
 /* Планшеты */
 @media (min-width: 768px) and (max-width: 1024px) {
