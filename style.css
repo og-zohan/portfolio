@@ -353,6 +353,7 @@ body {
   top: 85px;
   right: 26.3%;
   width: 24%;
+  z-index: 7;
 }
 
 .inventory-grid {
@@ -371,7 +372,7 @@ body {
 }
 
 .inventory-item.selected {
-  border: 2px solid red;
+  border: 1px solid red;
 }
 
 /* Превью предмета */
@@ -389,8 +390,8 @@ body {
 #preview-image {
   position: relative;
   display: flex;
-  right: -63px;
-  width: 28%; /* Фиксированная ширина для всех GIF */
+  right: -58px;
+  width: 30%; /* Фиксированная ширина для всех GIF */
 }
 
 /* Описание превью */
@@ -425,6 +426,7 @@ body {
   text-align: center;
   position: relative;
   transition: all 0.3s ease;
+  z-index: 5;
 }
 
 .menu-btn.active::after {
