@@ -382,6 +382,7 @@ body {
   object-fit: contain; /* чтобы не обрезало картинку */
 }
 
+
 /* Превью предмета */
 #item-preview {
   position: absolute;
