@@ -78,11 +78,20 @@ document.addEventListener("DOMContentLoaded", () => {
       inventoryItems.forEach((el) => el.classList.remove("selected")); // Снимаем выделение
       item.classList.add("selected"); // Добавляем выделение
 
-      const gifSrc = item.dataset.gif; // Получаем путь к GIF
-      const description = item.dataset.description; // Получаем описание
+      // 1) Скрываем "Обо мне" и "Контакты"
+    aboutSection.style.display = "none";
+    contactSection.style.display = "none";
+    
+    // 2) Сбрасываем активное состояние у кнопок "Обо мне" и "Контакты"
+    aboutBtn.classList.remove("active");
+    contactBtn.classList.remove("active");
 
-      previewImage.src = `assets/${gifSrc}`; // Устанавливаем путь к GIF
-      previewDescription.textContent = description; // Устанавливаем описание
+
+    const gifSrc = item.dataset.gif; // Получаем путь к GIF
+    const description = item.dataset.description; // Получаем описание
+
+    previewImage.src = `assets/${gifSrc}`; // Устанавливаем путь к GIF
+    previewDescription.textContent = description; // Устанавливаем описание
     });
   });
 });

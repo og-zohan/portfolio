@@ -369,10 +369,17 @@ body {
   height: auto;
   cursor: pointer;
   align-self: center;
+  border: 1px solid transparent
 }
 
 .inventory-item.selected {
   border: 1px solid red;
+}
+
+.inventory-item img {
+  width: 100%;
+  height: 100%; /* или auto, в зависимости от того, как ты хочешь масштабировать */
+  object-fit: contain; /* чтобы не обрезало картинку */
 }
 
 /* Превью предмета */
@@ -438,7 +445,6 @@ body {
   height: 100%;
   background: linear-gradient(0deg, rgba(255, 0, 128, 0.6), transparent);
   z-index: -1;
-  border-radius: 10px;
   box-shadow: 0 0 20px rgba(255, 0, 128, 0.8);
 }
 
@@ -479,7 +485,6 @@ body {
   height: 100%;
   background: linear-gradient(0deg, rgba(255, 0, 128, 0.6), transparent);
   z-index: -1;
-  border-radius: 10px;
   box-shadow: 0 0 20px rgba(255, 0, 128, 0.8);
 }
 
