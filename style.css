@@ -358,18 +358,18 @@ body {
 
 .inventory-grid {
     display: grid;
-    row-gap: 10px;
+    row-gap: 5px;
     align-content: stretch;
     justify-items: center;
-    grid-template-columns: 56px 56px;
+    grid-template-columns: 40px 40px;
 }
 
 .inventory-item {
-  width: 60%;
-  height: auto;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
-  align-self: center;
-  border: 1px solid transparent
+  border: 1px solid transparent;
+  box-sizing: border-box;
 }
 
 .inventory-item.selected {

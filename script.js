@@ -75,16 +75,18 @@ document.addEventListener("DOMContentLoaded", () => {
   // Открытие GIF из инвентаря
   inventoryItems.forEach((item) => {
     item.addEventListener("click", () => {
-      inventoryItems.forEach((el) => el.classList.remove("selected")); // Снимаем выделение
-      item.classList.add("selected"); // Добавляем выделение
+    inventoryItems.forEach((el) => el.classList.remove("selected")); // Снимаем выделение
+    item.classList.add("selected"); // Добавляем выделение
 
-      // 1) Скрываем "Обо мне" и "Контакты"
+    // 1) Скрываем "Обо мне" и "Контакты"
     aboutSection.style.display = "none";
     contactSection.style.display = "none";
     
     // 2) Сбрасываем активное состояние у кнопок "Обо мне" и "Контакты"
     aboutBtn.classList.remove("active");
     contactBtn.classList.remove("active");
+    // Делаем кнопку "Портфолио" активной
+    portfolioBtn.classList.add("active");
 
 
     const gifSrc = item.dataset.gif; // Получаем путь к GIF
