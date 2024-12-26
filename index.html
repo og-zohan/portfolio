@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <!-- ОБЯЗАТЕЛЬНО: чтобы мобильные устройства корректно масштабировали страницу -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resident Evil Portfolio</title>
   <link rel="stylesheet" href="style.css">
@@ -14,56 +15,56 @@
     </video>
   </div>
 
-  <!-- Главное меню -->
-  <div id="menu-container" class="hidden">
-    <img id="menu-bg" src="assets/menu_bg.png" alt="Menu Background">
+  <!-- Обёртка для мобильной (game-like) части -->
+  <div class="mobile-container">
+    <!-- Главное меню -->
+    <div id="menu-container" class="hidden">
+      <img id="menu-bg" src="assets/menu_bg.png" alt="Menu Background">
 
-   
-  <!-- EQUIP -->
-  <div id="health">
-    <img src="assets/health.gif" alt="Health">
-  </div>
-
-    <!-- EQUIP -->
-    <div id="equip">
-      <img src="assets/brain.gif" alt="Equip">
-    </div>
-
-    <!-- Инвентарь -->
-    <div id="inventory">
-      <div class="inventory-grid">
-      <img src="assets/item_1.png" class="inventory-item" data-description="Чудище созданное на Хеллоувин" alt="Monstro" data-gif="item_1.gif">
-      <img src="assets/item_2.png" class="inventory-item" data-description="Мозг - крайне важный инструмент!" alt="Brain" data-gif="item_2.gif">
-      <img src="assets/item_3.png" class="inventory-item" data-description="Кольцо 'Круг'" alt="Circle" data-gif="item_3.gif">
-      <img src="assets/item_4.png" class="inventory-item" data-description="Кольцо 'Треугольник'" alt="Triangle" data-gif="item_4.gif">
-      <img src="assets/item_5.png" class="inventory-item" data-description="Кольцо 'Квадрат'" alt="Square" data-gif="item_5.gif">
-      <img src="assets/item_6.png" class="inventory-item" data-description="cz-75 кастомная версия" alt="Gun" data-gif="item_6.gif">
+      <!-- Пример элементов -->
+      <div id="health">
+        <img src="assets/health.gif" alt="Health">
       </div>
-    </div>
-
-    <!-- Предпросмотр -->
-    <div id="item-preview">
-      <img id="preview-image" src="assets/item_2.gif" alt="Preview">
-      <p id="preview-description">Мозг - крайне важный инструмент!</p>
-    </div>
-
-    <!-- Кнопки -->
-    <div id="menu-buttons">
-      <button id="portfolio-btn" class="menu-btn active">Портфолио</button>
-      <div class="sub-buttons">
-        <button id="about-btn" class="menu-btn sub-btn">Обо мне</button>
-        <button id="contact-btn" class="menu-btn sub-btn">Контакты</button>
+      <div id="equip">
+        <img src="assets/brain.gif" alt="Equip">
       </div>
-    </div>
-    
 
-   <!-- Разделы -->
-    <div id="about-section" class="hidden">
-      <img src="assets/Omne.png" alt="Обо мне">
-    </div>
-    <div id="contact-section" class="hidden">
-      <img src="assets/Contact.png" alt="Контакты">
-    </div>
+      <!-- Инвентарь -->
+      <div id="inventory">
+        <div class="inventory-grid">
+          <img src="assets/item_1.png" class="inventory-item" data-description="Чудище созданное на Хеллоувин" alt="Monstro" data-gif="item_1.gif">
+          <img src="assets/item_2.png" class="inventory-item" data-description="Мозг - крайне важный инструмент!" alt="Brain" data-gif="item_2.gif">
+          <img src="assets/item_3.png" class="inventory-item" data-description="Кольцо 'Круг'" alt="Circle" data-gif="item_3.gif">
+          <img src="assets/item_4.png" class="inventory-item" data-description="Кольцо 'Треугольник'" alt="Triangle" data-gif="item_4.gif">
+          <img src="assets/item_5.png" class="inventory-item" data-description="Кольцо 'Квадрат'" alt="Square" data-gif="item_5.gif">
+          <img src="assets/item_6.png" class="inventory-item" data-description="cz-75 кастомная версия" alt="Gun" data-gif="item_6.gif">
+        </div>
+      </div>
+
+      <!-- Предпросмотр -->
+      <div id="item-preview">
+        <img id="preview-image" src="assets/item_2.gif" alt="Preview">
+        <p id="preview-description">Мозг - крайне важный инструмент!</p>
+      </div>
+
+      <!-- Кнопки -->
+      <div id="menu-buttons">
+        <button id="portfolio-btn" class="menu-btn active">Портфолио</button>
+        <div class="sub-buttons">
+          <button id="about-btn" class="menu-btn sub-btn">Обо мне</button>
+          <button id="contact-btn" class="menu-btn sub-btn">Контакты</button>
+        </div>
+      </div>
+
+      <!-- Разделы -->
+      <div id="about-section" class="hidden">
+        <img src="assets/Omne.png" alt="Обо мне">
+      </div>
+      <div id="contact-section" class="hidden">
+        <img src="assets/Contact.png" alt="Контакты">
+      </div>
+    </div> <!-- конец #menu-container -->
+  </div>   <!-- конец .mobile-container -->
 
   <script src="script.js"></script>
 </body>
