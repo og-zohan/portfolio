@@ -106,14 +106,15 @@ body {
 /* Инвентарь */
 #inventory {
   position: absolute;
-  top: 216px;
-  right: 303px;
+  top: 218px;
+  right: 304px;
 }
 
 .inventory-grid {
     display: grid;
     grid-template-columns: repeat(2, 191px);
-    row-gap: 22px;
+    grid-template-rows: auto;
+    row-gap: 20px;
     align-content: stretch;
     justify-content: space-between;
     justify-items: center;
@@ -121,8 +122,8 @@ body {
 }
 
 .inventory-item {
-  width: 120px;
-  height: 120px;
+  width: 121px;
+  height: 121px;
   cursor: pointer;
 }
 
