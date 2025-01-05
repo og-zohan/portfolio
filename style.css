@@ -106,14 +106,14 @@ body {
 /* Инвентарь */
 #inventory {
   position: absolute;
-  top: 225px;
-  right: 305px;
+  top: 216px;
+  right: 303px;
 }
 
 .inventory-grid {
     display: grid;
     grid-template-columns: repeat(2, 191px);
-    row-gap: 20px;
+    row-gap: 22px;
     align-content: stretch;
     justify-content: space-between;
     justify-items: center;
@@ -128,7 +128,7 @@ body {
 
 .inventory-item.selected {
   border: 2px solid red;
-  padding: 20px 80px;
+  padding: 5px 28px;
 }
 
 /* Превью предмета */
@@ -385,6 +385,7 @@ body {
 
 .inventory-item.selected {
   border: 1px solid red;
+  padding: 5px 28px;
 }
 
 .inventory-item img {
