@@ -310,7 +310,8 @@ body {
 /* Главное меню */
 #menu-container {
   position: relative;
-
+  width: 143%;
+  height: auto;
 }
 
 #menu-bg-mobail-img {
@@ -319,7 +320,6 @@ body {
   left: -76px;
   width: 97%;
   object-fit: cover;
-  display: block;
 }
 
 /* Шапка с именем и статусом */
