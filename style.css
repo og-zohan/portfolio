@@ -310,17 +310,12 @@ body {
 /* Главное меню */
 #menu-container {
   position: relative;
-  width: 143%;
-  height: auto;
 }
 
 #menu-bg-mobail-img {
-  position: relative;
+  position: absolute;
   top: 0;
   left: -76px;
-  width: 97%;
-  object-fit: cover;
-  display: block;
 }
 
 /* Шапка с именем и статусом */
