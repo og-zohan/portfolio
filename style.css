@@ -4,6 +4,14 @@
   src: url('assets/font.otf');
 }
 
+#menu-container {
+  /* Желательно задать какие-то гарантированные размеры или адаптивную высоту */
+  /* Пример: width: 100%; min-height: 100vh; и т.д. — зависит от вашей задумки */
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover; 
+}
+
 @media (min-width: 1025px) {
 
 
@@ -54,6 +62,7 @@ body {
   width: 100vw;
   height: 100vh;
   display: none; /* По умолчанию скрыто */
+  background-image: url("assets/menu_bg.png");
 }
 
 #menu-bg {
@@ -303,6 +312,7 @@ body {
   position: relative;
   width: 143%;
   height: auto;
+  background-image: url("assets/menu_bg_mobile.png");
 }
 
 #menu-bg {
