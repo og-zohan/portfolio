@@ -265,9 +265,9 @@ body {
     margin: 0 auto;  /* если хочешь по центру на более широком экране */
   }
   
-  /* .mobile-container {
+  .mobile-container {
     transform: scale(calc(100vw / 414));
-  } */
+  }
 
 
   body {
@@ -290,7 +290,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  z-index: 5;
 }
 
 #intro-video {
