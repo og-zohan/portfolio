@@ -106,7 +106,7 @@ body {
 /* Инвентарь */
 #inventory {
   position: absolute;
-  top: 218px;
+  top: 220px;
   right: 304px;
 }
 
@@ -265,9 +265,9 @@ body {
     margin: 0 auto;  /* если хочешь по центру на более широком экране */
   }
   
-  .mobile-container {
+  /* .mobile-container {
     transform: scale(calc(100vw / 414));
-  }
+  } */
 
 
   body {
