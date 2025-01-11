@@ -314,7 +314,7 @@ body {
 /* Главное меню */
 #menu-container {
   position: relative;
-  width: 143%;
+  width: 592px;
   height: auto;
 }
 
@@ -322,7 +322,7 @@ body {
   position: relative;
   top: 0;
   left: -1px;
-  width: 71%;
+  width: 420px;
   object-fit: cover;
   display: block;
 }
@@ -354,7 +354,7 @@ body {
 }
 
 #health img {
-  width: 59%; /* Установите желаемую ширину */
+  width: 107px; /* Установите желаемую ширину */
   height: auto; /* Установите желаемую высоту */
   object-fit: cover; /* Это свойство поможет при масштабировании */
 }
@@ -370,7 +370,7 @@ body {
 }
 
 #equip img {
-  width: 64%;
+  width: 60px;
   height: auto;
   display: flex;
 }
@@ -378,9 +378,9 @@ body {
 /* Инвентарь */
 #inventory {
   position: absolute;
-  top: 88px;
-  right: 26.3%;
-  width: 24%;
+  top: 91px;
+  right: 155px;
+  width: 143px;
   z-index: 7;
 }
 
@@ -415,7 +415,7 @@ body {
 #item-preview {
   position: absolute;
   bottom: 253px; /* Фиксированное положение относительно нижнего края */
-  left: 45.5%; /* Центрирование по горизонтали */
+  left: 265px; /* Центрирование по горизонтали */
   transform: translateX(-50%); /* Смещение на половину ширины для точного центрирования */
   width: 512px; /* Ширина контейнера */
   text-align: center; /* Центровка содержимого по горизонтали */
@@ -427,7 +427,7 @@ body {
   position: relative;
   display: flex;
   right: -58px;
-  width: 30%; /* Фиксированная ширина для всех GIF */
+  width: 160px; /* Фиксированная ширина для всех GIF */
 }
 
 /* Описание превью */
@@ -437,14 +437,14 @@ body {
   height: 26px;
   color: #fff; /* Цвет текста */
   text-align: left;
-  top: 91%;
+  top: 148px;
 }
 
 /* Основной контейнер кнопок */
 #menu-buttons {
   position: absolute;
   top: 25px;
-  left: 59.21%;
+  left: 351px;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
@@ -520,8 +520,8 @@ body {
 #about-section,
 #contact-section {
   position: absolute;
-  top: 104px;
-  left: 53%;
+  top: 107px;
+  left: 311px;
   transform: translateX(-31%);
   display: none; /* Скрыто по умолчанию */
   z-index: 5; /* Убедимся, что PNG выше других элементов */
@@ -530,11 +530,11 @@ body {
 #about-section img,
 #contact-section img {
   position: relative;
-  max-width: 130.5%;
+  max-width: 367px;
   height: auto;
   display: block;
   margin: auto;
-  left: -263px;
+  left: -237px;
 }
 }
 
@@ -774,4 +774,4 @@ body {
     margin: 0 auto;
   }
   }
-  
+}
