@@ -56,7 +56,7 @@ body {
   display: none; /* По умолчанию скрыто */
 }
 
-#menu-bg-desktop {
+#menu-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -305,9 +305,10 @@ body {
   height: auto;
 }
 
-#menu-bg-mobile {
+#menu-bg {
   position: relative;
   top: 0;
+  left: -76px;
   width: 97%;
   object-fit: cover;
 }
