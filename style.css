@@ -385,7 +385,6 @@ body {
 
 .inventory-item.selected {
   border: 1px solid red;
-   padding: 5px 28px;
 }
 
 .inventory-item img {
