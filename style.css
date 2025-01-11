@@ -73,6 +73,9 @@ body {
   height: 100%;
   object-fit: cover;
 }
+#menu-bg-mobail-img {
+  display: none;
+}
 
 /* Шапка с именем и статусом */
 #header {
@@ -317,9 +320,10 @@ body {
 #menu-bg-mobail-img {
   position: relative;
   top: 0;
-  left: -76px;
-  width: 97%;
+  left: -1px;
+  width: 71%;
   object-fit: cover;
+  display: block;
 }
 
 /* Шапка с именем и статусом */
@@ -341,8 +345,8 @@ body {
 #health {
   position: absolute;
   top: 48px;
-  right: 320px;
-  width: 180px;
+  right: 322px;
+  width: 181px;
 }
 
 #health img {
@@ -355,7 +359,7 @@ body {
 /* Область EQUIP */
 #equip {
   position: relative;
-  top: -290px;
+  top: -295px;
   right: -221px;
   width: 96px;
   height: 170px;
