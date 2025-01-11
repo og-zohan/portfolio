@@ -56,15 +56,13 @@ body {
   display: none; /* По умолчанию скрыто */
 }
 
-/* По умолчанию отображаем десктопную картинку, а мобильную скрываем */
 #menu-bg-desktop {
-  display: block; 
-  max-width: 100%; /* чтобы не вылазило за экран */
-}
-
-#menu-bg-mobile {
-  display: none; 
-  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Шапка с именем и статусом */
@@ -307,12 +305,11 @@ body {
   height: auto;
 }
 
-#menu-bg-desktop {
-  display: none;
-}
 #menu-bg-mobile {
-  display: block;
-}
+  position: relative;
+  top: 0;
+  width: 97%;
+  object-fit: cover;
 }
 
 /* Шапка с именем и статусом */
