@@ -551,7 +551,6 @@ body {
     width: 896px;
     height: 414px;
     transform-origin: top left;
-    transform: scale(calc(100vw / 896));
   }
 
   
