@@ -357,11 +357,10 @@ body {
 /* Область health.gif */
 #health {
   position: absolute;
-  top: 95px;
-  right: 1186.5px;
-  width: 170.99px;
-  height: 170.99px;
-  display: block;
+  top: 112px;
+  right: 783.5px;
+  width: 10.99px;
+  height: 96.99px;
 }
 
 /* Область EQUIP */
