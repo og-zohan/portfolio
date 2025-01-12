@@ -585,11 +585,6 @@ body {
   height: auto;
 }
 
-#menu-bg-mobail {
-  position: relative; 
-  /* тогда #menu-bg-mobail-img может быть position: absolute, 
-     и его top/left будут отталкиваться от #menu-bg-mobail */
-}
 
 #menu-bg {
   position: absolute;
