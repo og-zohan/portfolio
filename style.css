@@ -273,7 +273,7 @@ body {
 }
 
 /* Адаптивная версия для мобильных устройств */
-@media (max-width: 897px) and (orientation: portrait) {
+@media (max-width: 1024px) and (orientation: portrait) {
 
   .mobile-container {
     position: relative;
@@ -548,7 +548,7 @@ body {
 }
 }
 
-@media (max-width: 897px) and (orientation: landscape) {
+@media (max-width: 1024px) and (orientation: landscape) {
  
   .mobile-container {
     width: 896px;
