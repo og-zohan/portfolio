@@ -581,9 +581,9 @@ body {
 /* Главное меню */
 #menu-container {
   position: relative;
-  width: 100vw;
-  height: 100vh;
-  display: none; /* По умолчанию скрыто */
+  width: 61vw;
+  height: 71vh;
+  left: 9vh;
   background-image: url("assets/menu_bg.png");
 }
 
@@ -619,13 +619,13 @@ body {
 /* Область health.gif */
 #health {
   position: absolute;
-  top: 48px;
-  right: 322px;
-  width: 181px;
+  top: 38px;
+  right: 316.3px;
+  width: 70px;
 }
 
 #health img {
-  width: 107px; /* Установите желаемую ширину */
+  width: 100px; /* Установите желаемую ширину */
   height: auto; /* Установите желаемую высоту */
   object-fit: cover; /* Это свойство поможет при масштабировании */
 }
@@ -634,8 +634,8 @@ body {
 /* Область EQUIP */
 #equip {
   position: relative;
-  top: -295px;
-  right: -221px;
+  top: 26px;
+  right: -283px;
   width: 96px;
   height: 170px;
 }
@@ -649,8 +649,8 @@ body {
 /* Инвентарь */
 #inventory {
   position: absolute;
-  top: 91px;
-  right: 155px;
+  top: 74px;
+  right: 51px;
   width: 143px;
   z-index: 7;
 }
@@ -685,10 +685,10 @@ body {
 /* Превью предмета */
 #item-preview {
   position: absolute;
-  bottom: 253px; /* Фиксированное положение относительно нижнего края */
-  left: 265px; /* Центрирование по горизонтали */
+  bottom: 67px; /* Фиксированное положение относительно нижнего края */
+  left: 341px; /* Центрирование по горизонтали */
   transform: translateX(-50%); /* Смещение на половину ширины для точного центрирования */
-  width: 512px; /* Ширина контейнера */
+  width: 506px; /* Ширина контейнера */
   text-align: center; /* Центровка содержимого по горизонтали */
   display: flex;
 }
@@ -697,8 +697,8 @@ body {
 #preview-image {
   position: relative;
   display: flex;
-  right: -58px;
-  width: 160px; /* Фиксированная ширина для всех GIF */
+  right: -49px;
+  width: 156px; /* Фиксированная ширина для всех GIF */
 }
 
 /* Описание превью */
@@ -708,25 +708,22 @@ body {
   height: 26px;
   color: #fff; /* Цвет текста */
   text-align: left;
-  top: 148px;
+  top: 141px;
 }
 
 /* Основной контейнер кнопок */
 #menu-buttons {
   position: absolute;
-  top: 25px;
-  left: 351px;
+  top: 17px;
+  left: 407px;
   transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /* Главная кнопка "Портфолио" */
 .menu-btn {
   background: transparent;
   color: white;
-  padding: 4px 22.5px;
+  padding: 2px 19.5px;
   font-size: 12px;
   cursor: pointer;
   text-align: center;
@@ -760,7 +757,7 @@ body {
 .sub-btn {
   background: transparent;
   color: white;
-  padding: 4.3px 4.6px;
+  padding: 3.3px 3px;
   font-size: 10px;
   cursor: pointer;
   text-align: center;
@@ -791,8 +788,8 @@ body {
 #about-section,
 #contact-section {
   position: absolute;
-  top: 107px;
-  left: 311px;
+  top: 93px;
+  left: 383px;
   transform: translateX(-31%);
   display: none; /* Скрыто по умолчанию */
   z-index: 5; /* Убедимся, что PNG выше других элементов */
@@ -801,7 +798,7 @@ body {
 #about-section img,
 #contact-section img {
   position: relative;
-  max-width: 367px;
+  max-width: 346px;
   height: auto;
   display: block;
   margin: auto;
