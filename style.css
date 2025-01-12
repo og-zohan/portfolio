@@ -591,16 +591,18 @@ body {
      и его top/left будут отталкиваться от #menu-bg-mobail */
 }
 
-#menu-bg-mobail-img {
+#menu-bg {
   position: absolute;
   top: 0;
-  left: -1px;
-  width: 420px;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  display: block;
 }
 
-#menu-bg {
-  display: none;  /* Прячем десктопную на маленьких экранах */
+#menu-bg-mobail-img {
+  display: none;
 }
 
 /* Шапка с именем и статусом */
