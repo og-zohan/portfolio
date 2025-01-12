@@ -321,7 +321,8 @@ body {
   width: 414px;
   height: 896px;
   margin: 0 auto; /* чтобы, если ширина экрана чуть больше, было по центру */
-  background-size: cover; /* или contain, если не хотите обрезания */
+  background-size: contain;
+  background-position: center;
 }
 
 #menu-bg-mobail-img {
@@ -586,10 +587,11 @@ body {
 /* Главное меню */
 #menu-container {
   position: relative;
-    width: 896px;
-    height: 414px;
-    margin: 0 auto; 
-    background-size: cover;
+  width: 896px;
+  height: 414px;
+  margin: 0 auto; 
+  background-size: contain;
+  background-position: center;
 }
 
 #menu-bg1 {
