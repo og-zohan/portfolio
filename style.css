@@ -540,6 +540,274 @@ body {
 }
 }
 
+@media (max-width: 767px) and (orientation: landscape) {
+ 
+  .mobile-container-landscape {
+    position: relative;
+    width: 896px;
+    height: 414px;
+    transform-origin: top left;
+    transform: scale(calc(100vw / 896));
+  }
+
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: black;
+    font-family: 'CustomFont', Arial, sans-serif;
+    overflow: auto;
+  }
+
+  /* Интро */
+#intro-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+#intro-video {
+  width: 100%;
+  height: auto;
+}
+
+/* Главное меню */
+#menu-container {
+  position: relative;
+  width: 592px;
+  height: auto;
+}
+
+#menu-bg-mobail-img {
+  position: relative;
+  top: 0;
+  left: -1px;
+  width: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+#menu-bg {
+  display: none;  /* Прячем десктопную на маленьких экранах */
+}
+
+/* Шапка с именем и статусом */
+#header {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  display: flex;
+  font-size: 22px;
+}
+
+#condition {
+  margin-left: 50px;
+  font-size: 20px;
+  color: #00FF00;
+}
+
+/* Область health.gif */
+#health {
+  position: absolute;
+  top: 48px;
+  right: 322px;
+  width: 181px;
+}
+
+#health img {
+  width: 107px; /* Установите желаемую ширину */
+  height: auto; /* Установите желаемую высоту */
+  object-fit: cover; /* Это свойство поможет при масштабировании */
+}
+
+
+/* Область EQUIP */
+#equip {
+  position: relative;
+  top: -295px;
+  right: -221px;
+  width: 96px;
+  height: 170px;
+}
+
+#equip img {
+  width: 60px;
+  height: auto;
+  display: flex;
+}
+
+/* Инвентарь */
+#inventory {
+  position: absolute;
+  top: 91px;
+  right: 155px;
+  width: 143px;
+  z-index: 7;
+}
+
+.inventory-grid {
+    display: grid;
+    row-gap: 5px;
+    align-content: stretch;
+    justify-items: center;
+    grid-template-columns: 56px 56px;
+}
+
+.inventory-item {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+}
+
+.inventory-item.selected {
+  border: 1px solid red;
+}
+
+.inventory-item img {
+  width: 100%;
+  height: 100%; /* или auto, в зависимости от того, как ты хочешь масштабировать */
+  object-fit: contain; /* чтобы не обрезало картинку */
+}
+
+
+/* Превью предмета */
+#item-preview {
+  position: absolute;
+  bottom: 253px; /* Фиксированное положение относительно нижнего края */
+  left: 265px; /* Центрирование по горизонтали */
+  transform: translateX(-50%); /* Смещение на половину ширины для точного центрирования */
+  width: 512px; /* Ширина контейнера */
+  text-align: center; /* Центровка содержимого по горизонтали */
+  display: flex;
+}
+
+/* Изображение превью */
+#preview-image {
+  position: relative;
+  display: flex;
+  right: -58px;
+  width: 160px; /* Фиксированная ширина для всех GIF */
+}
+
+/* Описание превью */
+#preview-description {
+  position: absolute;
+  font-size: 11px;
+  height: 26px;
+  color: #fff; /* Цвет текста */
+  text-align: left;
+  top: 148px;
+}
+
+/* Основной контейнер кнопок */
+#menu-buttons {
+  position: absolute;
+  top: 25px;
+  left: 351px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Главная кнопка "Портфолио" */
+.menu-btn {
+  background: transparent;
+  color: white;
+  padding: 4px 22.5px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+  z-index: 5;
+}
+
+.menu-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(255, 0, 128, 0.6), transparent);
+  z-index: -1;
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.8);
+}
+
+/* Подкнопки */
+.sub-buttons {
+  display: flex;
+  gap: 3.5px;
+  left: -30px;
+  position: absolute;
+  top: -2.3px;
+  padding: 31px 31px;
+}
+
+.sub-btn {
+  background: transparent;
+  color: white;
+  padding: 4.3px 4.6px;
+  font-size: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  left: -1px;
+  white-space: nowrap;
+}
+
+.sub-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sub-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(255, 0, 128, 0.6), transparent);
+  z-index: -1;
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.8);
+}
+
+
+/* Скрываем секции по умолчанию */
+#about-section,
+#contact-section {
+  position: absolute;
+  top: 107px;
+  left: 311px;
+  transform: translateX(-31%);
+  display: none; /* Скрыто по умолчанию */
+  z-index: 5; /* Убедимся, что PNG выше других элементов */
+}
+
+#about-section img,
+#contact-section img {
+  position: relative;
+  max-width: 367px;
+  height: auto;
+  display: block;
+  margin: auto;
+  left: -237px;
+}
+
+}
+
 /* Планшеты */
 @media (min-width: 768px) and (max-width: 1024px) {
 
