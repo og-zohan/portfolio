@@ -79,6 +79,11 @@ body {
   display: none;
 }
 
+#menu-bg1 {
+  display: none;
+}
+
+
 /* Шапка с именем и статусом */
 #header {
   position: absolute;
@@ -332,6 +337,11 @@ body {
   display: none;  /* Прячем десктопную на маленьких экранах */
 }
 
+#menu-bg1 {
+  display: none;
+}
+
+
 /* Шапка с именем и статусом */
 #header {
   position: absolute;
@@ -582,7 +592,7 @@ body {
     background-size: cover;
 }
 
-#menu-bg {
+#menu-bg1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -595,6 +605,11 @@ body {
 #menu-bg-mobail-img {
   display: none;
 }
+
+#menu-bg {
+  display: none;
+}
+
 
 /* Шапка с именем и статусом */
 #header {
