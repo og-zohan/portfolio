@@ -279,18 +279,16 @@ body {
     margin: 0 auto;  /* если хочешь по центру на более широком экране */
   }
   
-  .mobile-container {
+  /* .mobile-container {
     transform: scale(calc(100vw / 414));
-  }
+  } */
 
 
-  body {
+  html, body {
     margin: 0;
     padding: 0;
     background-color: black;
-    color: black;
-    font-family: 'CustomFont', Arial, sans-serif;
-    overflow: auto;
+    overflow: hidden;
   }
 
   /* Интро */
@@ -315,8 +313,10 @@ body {
 /* Главное меню */
 #menu-container {
   position: relative;
-  width: 592px;
-  height: auto;
+  width: 414px;
+  height: 896px;
+  margin: 0 auto; /* чтобы, если ширина экрана чуть больше, было по центру */
+  background-size: cover; /* или contain, если не хотите обрезания */
 }
 
 #menu-bg-mobail-img {
@@ -550,13 +550,11 @@ body {
   }
 
   
-  body {
+  html, body {
     margin: 0;
     padding: 0;
     background-color: black;
-    color: black;
-    font-family: 'CustomFont', Arial, sans-serif;
-    overflow: auto;
+    overflow: hidden;
   }
 
   /* Интро */
@@ -581,10 +579,11 @@ body {
 /* Главное меню */
 #menu-container {
   position: relative;
-  width: 61vw;
-  height: 71vh;
-  left: 9vh;
-  background-image: url("assets/menu_bg.png");
+    width: 896px;
+    height: 414px;
+    margin: 0 auto; 
+    background: url("assets/menu_bg.png") no-repeat center center;
+    background-size: cover;
 }
 
 #menu-bg {
