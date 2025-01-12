@@ -322,7 +322,7 @@ body {
   height: 896px;
   margin: 0 auto; /* чтобы, если ширина экрана чуть больше, было по центру */
   background-size: contain;
-  background-position: center;
+  background-position: center center;
 }
 
 #menu-bg-mobail-img {
@@ -591,7 +591,7 @@ body {
   height: 414px;
   margin: 0 auto; 
   background-size: contain;
-  background-position: center;
+  background-position: center center;
 }
 
 #menu-bg1 {
