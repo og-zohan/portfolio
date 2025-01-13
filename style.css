@@ -350,20 +350,20 @@ html, body {
 /* Область health.gif */
 #health {
   position: relative;
-  top: 180px;
-  left: 300px;
+  top: 745px;
+  left: 317px;
 }
 
 #health img {
   position: absolute;
-  width: 188px;
+  width: 198px;
 }
 
 /* Область EQUIP */
 #equip {
   position: absolute;
-  top: 158px;
-  right: 384.5px;
+  top: 721px;
+  right: 408px;
   width: 110px;
   height: 110px;
 }
@@ -376,14 +376,14 @@ html, body {
 /* Инвентарь */
 #inventory {
   position: absolute;
-  top: 251px;
-  right: 162px;
+  top: 826px;
+  right: 178px;
 }
 
 .inventory-grid {
     display: grid;
     grid-template-rows: auto;
-    row-gap: 17px;
+    row-gap: 19px;
     align-content: stretch;
     justify-content: space-between;
     justify-items: center;
@@ -403,8 +403,8 @@ html, body {
 /* Превью предмета */
 #item-preview {
   position: absolute;
-  bottom: 179px; /* Фиксированное положение относительно нижнего края */
-  left: 40.4%; /* Центрирование по горизонтали */
+  top: 802px; /* Фиксированное положение относительно нижнего края */
+  left: 421px; /* Центрирование по горизонтали */
   transform: translateX(-50%); /* Смещение на половину ширины для точного центрирования */
   width: 506px; /* Ширина контейнера */
   text-align: center; /* Центровка содержимого по горизонтали */
@@ -414,14 +414,14 @@ html, body {
 #preview-image {
   position: relative;
   display: block;
-  right: -96px;
+  right: -109px;
   width: 282px; /* Фиксированная ширина для всех GIF */
   top: 32px;
 }
 
 /* Описание превью */
 #preview-description {
-  font-size: 27px;
+  font-size: 23px;
   height: 37px;
   color: #fff; /* Цвет текста */
   text-align: left;
@@ -430,8 +430,8 @@ html, body {
 /* Основной контейнер кнопок */
 #menu-buttons {
   position: absolute;
-  top: 136px;
-  left: 761px;
+  top: 700px;
+  left: 803px;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
@@ -443,7 +443,7 @@ html, body {
 .menu-btn {
   background: transparent;
   color: white;
-  padding: 8px 28px;
+  padding: 7px 35px;
   font-size: 26px;
   cursor: pointer;
   text-align: center;
@@ -467,7 +467,7 @@ html, body {
 /* Подкнопки */
 .sub-buttons {
   display: flex;
-  gap: 11px;
+  gap: 9px;
   left: -3px;
   position: absolute;
   top: 56px;
@@ -476,13 +476,13 @@ html, body {
 .sub-btn {
   background: transparent;
   color: white;
-  padding: 8px 8px;
-  font-size: 18px;
+  padding: 10px 13px;
+  font-size: 17px;
   cursor: pointer;
   text-align: center;
   transition: all 0.3s ease;
   position: relative;
-  left: 3px;
+  left: 4px;
   white-space: nowrap;
 }
 
@@ -508,7 +508,7 @@ html, body {
 #about-section,
 #contact-section {
   position: absolute;
-  top: 284px;
+  top: 853px;
   transform: translateX(-11.3%);
   display: none; /* Скрыто по умолчанию */
   z-index: 5; /* Убедимся, что PNG выше других элементов */
