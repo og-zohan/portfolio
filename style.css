@@ -356,9 +356,9 @@ html, body {
 
 /* Область health.gif */
 #health {
-  position: absolute;
-  top: 114px;
-  right: -229px;
+  position: relative;
+  top: 119px;
+  left: 142px;
 }
 
 #heath img {
