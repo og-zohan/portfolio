@@ -67,6 +67,8 @@ document.addEventListener("DOMContentLoaded", () => {
     'assets/item_4.gif',
     'assets/item_5.gif',
     'assets/item_6.gif',
+    'assets/item_7.gif',
+    'assets/item_8.gif',
   ];
 
   // Предварительная загрузка GIF
