@@ -12,7 +12,7 @@
   background-size: cover; 
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
 
 
   .desctop-container {
@@ -281,17 +281,6 @@ html, body {
   overflow: auto;
 }
 
-.tablet-container {
-  position: relative;
-  /* "Эталонный" размер, под который ты сверстал всё в px */
-  width: 1024px;   
-  height: 768px;  /* к примеру, высота  (портрет) */
-  transform-origin: top left; /* чтобы масштаб шёл из левого верхнего угла */
-  margin: 0 auto;  /* если хочешь по центру на более широком экране */
-  background-size: contain;
-  overflow: visible;
-}
-
 /* Интро */
 #intro-container {
   position: fixed;
@@ -314,10 +303,14 @@ html, body {
 /* Главное меню */
 #menu-container {
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  width: 1024px;
+  height: 768px;
   display: none; /* По умолчанию скрыто */
   background-image: url("assets/menu_bg.png");
+  overflow: visible;
+  background-size: contain;
+  margin: 0 auto;
+  transform-origin: top left;
 }
 
 #menu-bg {
@@ -361,7 +354,7 @@ html, body {
   left: 142px;
 }
 
-#heath img {
+#health img {
   position: absolute;
   width: 252px;
 }
