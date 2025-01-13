@@ -272,22 +272,24 @@ body {
 @media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
   /* десктопные стили для iPad в горизонтали */
 
-  .desctop-container {
-    position: relative;
-    /* "Эталонный" размер, под который ты сверстал всё в px */
-    width: 1080px;   
-    height: 1920px;  /* к примеру, высота  (портрет) */
-    transform-origin: top left; /* чтобы масштаб шёл из левого верхнего угла */
-    margin: 0 auto;  /* если хочешь по центру на более широком экране */
-  }
-
-body {
+html, body {
   margin: 0;
   padding: 0;
   background-color: black;
   color: black;
   font-family: 'CustomFont', Arial, sans-serif;
   overflow: auto;
+}
+
+.tablet-container {
+  position: relative;
+  /* "Эталонный" размер, под который ты сверстал всё в px */
+  width: 1024px;   
+  height: 768px;  /* к примеру, высота  (портрет) */
+  transform-origin: top left; /* чтобы масштаб шёл из левого верхнего угла */
+  margin: 0 auto;  /* если хочешь по центру на более широком экране */
+  background-size: contain;
+  overflow: visible;
 }
 
 /* Интро */
