@@ -449,6 +449,14 @@ html, body {
   text-align: center;
   position: relative;
   transition: all 0.3s ease;
+  background: none;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .menu-btn.active::after {
@@ -484,6 +492,14 @@ html, body {
   position: relative;
   left: 4px;
   white-space: nowrap;
+  background: none;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .sub-btn:hover {
